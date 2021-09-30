@@ -1,8 +1,11 @@
+const path = require("path");
 const glob = require("glob");
 const rollup = require("rollup");
 const buble = require("@rollup/plugin-buble");
 const { nodeResolve } = require("@rollup/plugin-node-resolve");
 const fs = require("fs-extra");
+
+fs.removeSync(path.resolve(__dirname, "../dist/"));
 
 const copy = (file, dist = "dist/") => {
   return fs.copy(

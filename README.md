@@ -10,6 +10,8 @@ npm install console-emoji-log
 ```js
 // use as commonjs
 const console = require("console-emoji-log");
+// use as ES module
+// import console from "console-emoji-log";
 
 console.log("log"); // ⚪️ => log
 console.info("info"); // 🔵 => info

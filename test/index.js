@@ -1,4 +1,5 @@
-const console = require("../dist/console");
+import console from "console-emoji-log";
+// const console = require("console-emoji-log");
 
 console.log("log");
 console.info("info");
